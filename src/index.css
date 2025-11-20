@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Fondo general oscuro */
+body {
+    background-color: #0f0a15;
+}
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0a15; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d1f3a; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B973FA; 
+}
+
+/* Utilidad para ocultar barra pero permitir scroll (para los breadcrumbs) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
